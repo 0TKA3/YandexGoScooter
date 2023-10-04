@@ -144,23 +144,3 @@ header {
         line-height: 130%; /* 31.2px */
     }
 }
-.aboniment-new-price {
-    display: inline-flex;
-    padding: 8px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
-}
-.aboniment-old-price {
-    color: #808080;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 19.2px */
-    text-decoration: line-through;
-    flex-shrink: 0;
-    border-radius: 500px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
-}
