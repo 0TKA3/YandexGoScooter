@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url('./font/text-black.woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YS Text';
+    src: url('./font/text-medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YS Text';
+    src: url('./font/text-regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'YS Text';
+}
+
+.container {
+    margin: 0 auto;
+}
