@@ -45,4 +45,122 @@ body {
 
 .container {
     margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+header {
+    overflow: hidden;
+    flex-shrink: 0;
+    &::before {
+        content: "";
+        display: block;    
+        width: 1440px;
+        height: 804px;    
+        position: absolute;
+        top: 0;
+        background: linear-gradient(90deg, #FF5C4D 0%, #EB469F 25%, #8341EF 72%, #3F68F9 100%,);
+        opacity: 0.22;
+        z-index: -5;
+    }
+    &::after {
+        content: "";
+        display: block;    
+        width: 1440px;
+        height: 804px;    
+        position: absolute;
+        top: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+        z-index: -4;
+    }
+    
+}
+.header-inner {
+    margin-left: 262px;
+    margin-top: 125px;
+    .yandex-go-img {
+        width: 176px;
+        height: 50.129px;
+        flex-shrink: 0;
+    }
+    h1 {
+        margin-top: 72px;
+        color: #21201F;
+        font-family: YS Text;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%; /* 72px */
+        letter-spacing: -1.44px;
+    }
+}
+.composition {
+    margin-top: -400px;
+    margin-left: 320px;
+    width: 800px;
+    position: relative;
+    z-index: -1;
+    img {
+        top: 0;
+        position: absolute;
+        width: 650px;
+        height: 618px;
+        transform: rotate(-8.008deg);
+        flex-shrink: 0;
+    }
+    .join-soc {
+        position: absolute;
+        width: 195.344px;
+        height: 195.344px;
+        transform: rotate(3.699deg);
+        flex-shrink: 0;
+        filter: invert(100%); 
+        top: 305px;
+        left: 170px;
+    }
+}
+.blue-light {
+    position: relative;
+    top: 80px;
+    width: 657.8px;
+    height: 401.903px;
+    transform: rotate(-140.03deg);
+    flex-shrink: 0;
+    border-radius: 657.8px;
+    opacity: 0.5;
+    background: #8241EF;
+    filter: blur(100px);
+    z-index: -2;
+}
+
+.buy-aboniment{
+    margin-top: 48px;
+    p {
+        color: #21201F;
+        font-family: YS Text;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 31.2px */
+    }
+}
+.aboniment-new-price {
+    display: inline-flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 500px;
+    background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+}
+.aboniment-old-price {
+    color: #808080;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    text-decoration: line-through;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
 }
