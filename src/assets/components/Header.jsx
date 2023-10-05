@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <>
         <header>
+            <div className="background"></div>
             <div className="header-inner">
                 <div className="yandex-go-img">
                     <img src={yandexGoImg} alt="Yandex GO" />

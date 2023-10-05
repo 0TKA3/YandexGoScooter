@@ -6,19 +6,9 @@ import zeroStartIcon from '../icons/zero-rub-start.svg'
 const Bonuses = () => {
   return (
     <div className="club-bonuses">
-      <div className="club-bonuses-bonus">
-        <img src={freePauseIcon} alt="Бесплатная пауза" />
-        <p>
-          Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе
-          или передохнуть
-        </p>
-      </div>
-      <div className="club-bonuses-bonus">
-        <img src={lowBatteryIcon} alt="Низкий заряд" />
-        <p>
-          Если самокат недостаточно заряжен или с ним неудобно переходить
-          дорогу, замените по пути на другой — это бесплатно
-        </p>
+        <div className="club-bonuses-bonus">
+          <img src={zeroStartIcon} alt="Бесплатный старт" />
+          <p>0 ₽ за старт в каждой поездке</p>
       </div>
       <div className="club-bonuses-bonus">
         <img src={threeScootersIcon} alt="Три самоката" />
@@ -27,9 +17,20 @@ const Bonuses = () => {
           абонементом — так у всех будет бесплатный старт
         </p>
       </div>
-      <div className="club-bonuses-bonus">
-        <img src={zeroStartIcon} alt="Бесплатный старт" />
-        <p>0 ₽ за старт в каждой поездке</p>
+
+      <div className="club-bonuses-bonus last">
+        <img src={freePauseIcon} alt="Бесплатная пауза" />
+        <p>
+          Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе
+          или передохнуть
+        </p>
+      </div>
+      <div className="club-bonuses-bonus last">
+        <img src={lowBatteryIcon} alt="Низкий заряд" />
+        <p>
+          Если самокат недостаточно заряжен или с ним неудобно переходить
+          дорогу, замените по пути на другой — это бесплатно
+        </p>
       </div>
     </div>
   );
