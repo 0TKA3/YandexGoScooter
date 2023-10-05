@@ -11,21 +11,21 @@ const Bonuses = () => {
           <p>0 ₽ за старт в каждой поездке</p>
       </div>
       <div className="club-bonuses-bonus">
-        <img src={threeScootersIcon} alt="Три самоката" />
+        <img src={threeScootersIcon} alt="Три самоката" className='with-friend'/>
         <p>
           Катаетесь с друзьями? Бронируйте до трёх самокатов с аккаунта с
           абонементом — так у всех будет бесплатный старт
         </p>
       </div>
 
-      <div className="club-bonuses-bonus last">
+      <div className="club-bonuses-bonus last ">
         <img src={freePauseIcon} alt="Бесплатная пауза" />
         <p>
           Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе
           или передохнуть
         </p>
       </div>
-      <div className="club-bonuses-bonus last">
+      <div className="club-bonuses-bonus last last-mobile">
         <img src={lowBatteryIcon} alt="Низкий заряд" />
         <p>
           Если самокат недостаточно заряжен или с ним неудобно переходить

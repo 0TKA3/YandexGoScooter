@@ -477,3 +477,103 @@ header {
 
     }
 }
+
+@media (max-width: 768px) {
+    .header-inner {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+
+        .blue-light {
+            display: none;
+        }
+        .join-soc {
+            top: 168px;
+            left: 85px;
+            width: 80px;
+            height: 80px;
+        }
+        height: 730px !important;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        padding: 32px;
+        h1 {
+            font-size: 36px;
+        }
+    }
+    .composition {
+        position: absolute;
+        margin: 0;
+        top: 350px;
+        left: 40px;
+        img {
+            width: 320px;
+            height: auto;
+        }
+    }
+    .buy-aboniment {
+        margin-top: 32px;
+        p {
+            font-size: 18px;
+        }
+    }
+    .join-club-button {
+        z-index: 100;
+        position: fixed;
+        bottom: -100px;
+        align-self: center;
+        button {
+            font-size: 18px;
+            width: 311px;
+            padding: 18px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .content-container {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 32px;
+    }
+    .main-header-text {
+        font-size: 30px !important;
+    }
+    .club-bonuses {
+        padding: 5px;
+        flex-direction: column;
+    }
+    .club-bonuses-bonus {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 !important;
+        margin-bottom: 24px !important;
+        .with-friend {
+            margin-left: -10px;
+        }
+        p {
+            font-size: 16px;
+            width: 200px;
+            margin-left: 16px;
+            color: #21201F;
+            font-family: YS Text;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 19.2px */
+        }
+    }
+    .exclusive-access {
+        margin-top: 72px;
+        h1 {
+            margin-top: 32px;
+            font-size: 32px !important;
+        }
+        p {
+            margin-top: 32px !important;
+            font-size: 16px !important;
+        }
+    }
+}

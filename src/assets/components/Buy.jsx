@@ -23,7 +23,7 @@ const Buy = () => {
                 <div className="down-right-side">
                     <h1>80  % наших пользователей уже в клубе и экономят на поездках</h1>
                     <p>Присоединяйтесь — опция начнёт действовать в начале сезона–2024. Об открытии сезона предупредим заранее, чтобы вы были готовы</p>
-                    <button>Хочу абонемент</button>
+                    <button  onClick={()=> {window.open("https://go.yandex/ru_ru/lp/rides/scooter")}}>Хочу абонемент</button>
                 </div>
             </div>
         </div>

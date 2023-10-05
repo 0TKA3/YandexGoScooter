@@ -21,7 +21,7 @@ const Header = () => {
                     <p>Купите абонемент, чтобы стать<br />частью клуба в новом сезоне–2024.<br />8 месяцев за <span className='aboniment-price'><span className='aboniment-price-new-price'>499 ₽</span> <span className='aboniment-price-old-price'>3190₽</span></span></p>
                 </div>
                 <div className="join-club-button">
-                    <button>Стать частью клуба</button>
+                    <button onClick={()=> {window.open("https://go.yandex/ru_ru/lp/rides/scooter")}}>Стать частью клуба</button>
                 </div>
             </div>
         </header>
