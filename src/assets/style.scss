@@ -41,6 +41,8 @@ a:hover  {
 
 body {
     font-family: 'YS Text';
+        overflow: auto;
+        overflow-x: hidden;
 }
 
 .container {
@@ -191,9 +193,50 @@ header {
         background: #FFDE40;
         box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
         margin-bottom: 124px;
+        box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+        transition: background-color 0.2s ease-in;
+
 
         &:hover {
-            background: darken(#FFDE40, 5%);
+            background: darken(#FFDE40, 10%);
+        }
+    }
+}
+
+// Content
+
+.content-container {
+    display: flex;
+    padding: 0px 231px;
+    background-color: #fff;
+    flex-direction: column;
+    .main-header-text {
+        color: #21201F;
+        font-family: YS Text;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%; /* 56px */
+        letter-spacing: -1.12px;
+        margin-bottom: 48px;
+    }
+}
+.club-bonuses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+    .club-bonuses-bonus {
+        width: 362px;
+        color: #21201F;
+        font-family: YS Text;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 28.8px */
+        margin-right: 112px;
+        margin-bottom: 61px;
+        img {
+            margin-bottom: 16px;
         }
     }
 }
