@@ -1,7 +1,10 @@
 import scooter from '../images/buy-scooter.png'
 import soloScooter from '../images/scooter.png'
 import joinSoc from '../images/join-socety.png'
+import { useResize } from '../hooks/useResize'
+
 const Buy = () => {
+    const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
     return (
         <div className="buy-aboniment">
             <div className="top-side">
@@ -9,10 +12,11 @@ const Buy = () => {
                     <h1>Купить абонемент и вступить в клуб смогут те, кто в Плюсе</h1>
                     <p>За каждую поездку на самокатах такие пользователи получают кешбэк баллами. Баллы можно тратить на поездки на самокатах и такси с Яндекс Go, покупки и заказы в других сервисах Яндекса</p>
                 </div>
-                <div className="top-right-side">
+                {width>768 ? (                <div className="top-right-side">
                     <div className="elipse"></div>
                     <img src={scooter} alt="скутер" />
-                </div>
+                </div>) : (<></>)}
+
             </div>
             <div className="down-side">
                 <div className="down-left-side">

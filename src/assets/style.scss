@@ -614,4 +614,117 @@ header {
             }
         }
     }
+    .top-side {
+        padding-left: 32px;
+    }
+    .top-left-side {
+        h1 {
+            color: #21201F;
+            width: 311px;
+            margin: 0;
+            margin-right: 0px !important;
+            font-family: YS Text;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 100%; /* 32px */
+            letter-spacing: -0.64px;
+            margin-bottom: 32px;
+        }
+        p{
+            color: #21201F;
+            width: 311px;
+            font-family: YS Text;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 19.2px */
+        }
+    }
+    .down-side{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 32px;
+        width: 100vw;
+        height: 710px;
+        .elipse {
+            margin-bottom: 20px;
+        }
+        .down-left-side {
+            align-self: start;
+            height: 300px;
+            .solo-scooter {
+                width: 250px;
+                height: auto !important;
+                margin-left: 20px;
+            }
+            width: 283px;
+            .buy-join-soc {
+                width: 283px;
+                top: -260px;
+            }
+        }
+    }
+    .buy-aboniment {
+        height: 1020px;
+    }
+    .down-right-side {
+        margin-top: 20px;
+        h1 {
+            width: 311px !important; 
+            color: #21201F;
+
+            font-family: YS Text;
+            font-size: 32px !important;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 100%; /* 32px */
+            letter-spacing: -0.64px;
+            margin-bottom: 32px !important;
+            margin-right: 0 !important;
+        }
+        p {
+            margin-right: 0 !important;
+            color: #21201F;
+            width: 311px !important;
+            font-family: YS Text;
+            font-size: 16px !important;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 19.2px */
+            margin-bottom: 32px !important;
+        }
+        button {
+            display: flex;
+            width: 311px !important;
+            height: 49px !important;
+            padding: 18px 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            color: #21201F;
+            text-align: right;
+
+            font-family: YS Text;
+            font-size: 18px !important;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px; /* 122.222% */
+        }
+    }
+    .footer{
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        margin-bottom: 72px;
+        margin-top: 72px;
+        width: 375px;
+        p {
+            font-size: 10px;
+            width: 311px;
+            margin: 0 auto; 
+            line-height: 120%; /* 12px */
+        }
+    }
 }
