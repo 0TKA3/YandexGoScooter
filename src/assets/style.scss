@@ -52,8 +52,10 @@ body {
 }
 
 header {
+    min-width: 768px;
     overflow: hidden;
     flex-shrink: 0;
+    display: flex;
     &::before {
         content: "";
         display: block;    
@@ -78,7 +80,8 @@ header {
     
 }
 .header-inner {
-    margin-left: 262px;
+    width: 1000px;
+    margin: 0 auto;
     margin-top: 125px;
     .yandex-go-img {
         width: 176px;
@@ -207,10 +210,13 @@ header {
 
 .content-container {
     display: flex;
-    padding: 0px 231px;
+    // padding: 0px 231px;
+    width: 1000px;
+    margin: 0 auto;
     background-color: #fff;
     flex-direction: column;
     .main-header-text {
+        width: 700px;
         color: #21201F;
         font-family: YS Text;
         font-size: 56px;
@@ -239,4 +245,66 @@ header {
             margin-bottom: 16px;
         }
     }
+}
+
+.exclusive-access {
+    display: flex;
+    flex-wrap: wrap;
+    .exclusive-access-header {
+        display: block;
+        color: #21201F;
+
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%; /* 48px */
+        letter-spacing: -0.96px;
+    }
+    .exclusive-access-text {
+        width: 442px;
+        color: #21201F;
+        margin-top: 48px;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 28.8px */
+    }
+    .exclusive-access-photo {
+        flex-shrink: 0;
+
+        .first-img-decore {
+            position: absolute;
+            z-index: 100;
+            top: -210px;
+            right: -220px;
+            width: 153.843px;
+            height: 78.026px;
+            flex-shrink: 0;
+        }
+
+        .main-photo-wrapper {
+            display: flex;
+            width: 455px;
+            height: 455px;
+            transform: rotate(2deg);
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            margin-top: 98px;
+            img {
+                border-radius: 65px;
+                margin-bottom: 8px;
+                margin-left: 40px;
+                width: 456px;
+                height: 456px;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+.second-photo {
+    position: relative;
+    left: -480px;
+    top: -340px;
 }
