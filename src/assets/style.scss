@@ -566,14 +566,40 @@ header {
         }
     }
     .exclusive-access {
+        display: flex;
         margin-top: 72px;
+        height: 800px;
+        flex-direction: column;
         h1 {
+            width: 311px;
             margin-top: 32px;
             font-size: 32px !important;
+            height: auto;
         }
         p {
+            width: 311px !important;
             margin-top: 32px !important;
             font-size: 16px !important;
+            height: auto;
         }
+    }
+    .exclusive-access-header {
+        height: 70px;
+    }
+    .slider {
+        .slider-buttons {
+            display: flex;
+            justify-content: center;
+            button {
+                cursor: pointer;
+            }
+        }
+        margin-left: -17px;
+        .slider-main-image {
+            img {
+                border-radius: 48px;
+            }
+        }
+        margin-top: 47px;
     }
 }

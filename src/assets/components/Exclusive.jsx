@@ -5,9 +5,24 @@ import excFirst from '../images/1.jpeg'
 import excSecond from '../images/2.jpeg'
 import excThird from '../images/3.jpeg'
 import excFourth from '../images/4.jpeg'
+import { useResize } from '../hooks/useResize'
+import { useState } from 'react'
 
 
 const Exclusive = () => {
+  const sliderImgList = [excFirst,excSecond,excThird,excFourth]
+  const [sliderImage, setSliderImage] = useState(sliderImgList[0])
+  let counter = 0
+
+
+  function sliderNext() {
+    if(counter<3) {
+      counter++
+      setSliderImage(sliderImgList[counter])
+    }
+  }
+
+  const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   return (
     <div className="exclusive-access">
       <h1 className="exclusive-access-header">
@@ -21,7 +36,8 @@ const Exclusive = () => {
         катались на самокатах с Сергеем Мезенцевым и слушали хор
         Attaque de Panique
       </p>
-      <div className="exclusive-access-photo">
+      {width>768 ? (
+        <div className="exclusive-access-photo">
         <div className="main-photo-wrapper">
           <img src={excFirst} alt="" />
           <img className="first-img-decore" src={firstDecore} alt="" />
@@ -38,6 +54,21 @@ const Exclusive = () => {
           <img src={excFourth} alt="" />
         </div>
       </div>
+      ) : (
+        <>
+          <div className="slider">
+            <div className="slider-decoration"></div>
+            <div className="slider-main-image">
+              <img src={sliderImage} alt="" width={344}/>
+            </div>
+            <div className="slider-buttons">
+              <button style={{marginRight:"12px"}}>prev</button>
+              <button onClick={sliderNext}>next</button>
+            </div>
+          </div>
+        </>
+      )}
+      
     </div>
   );
 };
