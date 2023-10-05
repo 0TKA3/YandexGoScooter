@@ -592,7 +592,10 @@ header {
             justify-content: center;
             button {
                 cursor: pointer;
+                background-color: #fff;
             }
+            width: 344px;
+            
         }
         margin-left: -17px;
         .slider-main-image {
@@ -601,5 +604,14 @@ header {
             }
         }
         margin-top: 47px;
+        .slider-decoration {
+            position: absolute;
+            left: 250px;
+            top: 1790px;
+            img {
+                width: 120px;
+                height: auto;
+            }
+        }
     }
 }
