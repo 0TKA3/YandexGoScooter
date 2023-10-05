@@ -665,9 +665,9 @@ header {
         width: 100vw;
         height: 710px;
         .elipse {
-            display: none;
-            margin-bottom: 20px;
-            max-width: 100vw;
+            margin-bottom: 50px;
+            max-width: 100vw !important;
+            width: 250px;
         }
         .down-left-side {
             align-self: start;
