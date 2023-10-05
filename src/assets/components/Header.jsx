@@ -14,7 +14,7 @@ const Header = () => {
                 <h1>Вступайте<br />в клуб<br />Самокатов</h1>
                 <div className="composition">
                     <div className="blue-light"></div>
-                    <img src={composition} alt="scooter-composition" />
+                    <img src={composition} alt="scooter-composition" className='scooter-composition'/>
                     <img className="join-soc"src={joinSoc} alt="Вступить в сообщество" />
                 </div>
                 <div className='buy-aboniment'>
