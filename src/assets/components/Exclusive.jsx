@@ -7,12 +7,23 @@ import excThird from '../images/3.jpeg'
 import excFourth from '../images/4.jpeg'
 import prevSlideIcon from '../icons/prev-slide.svg'
 import nextSlideIcon from '../icons/next-slide.svg'
+import excFirstMobile from '../images/1mobile.png'
+import excSecondMobile from '../images/2mobile.png'
+import excThirdMobile from '../images/3mobile.png'
+import excFourthMobile from '../images/4mobile.png'
 import { useResize } from '../hooks/useResize'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 const Exclusive = () => {
-  const sliderImgList = [excFirst,excSecond,excThird,excFourth]
+  const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
+  let sliderImgList = []
+    if(width<768) {
+      sliderImgList =[excFirstMobile,excSecondMobile,excThirdMobile,excFourthMobile]
+    } else {
+      sliderImgList = [excFirst,excSecond,excThird,excFourth]
+    }
+
   const [sliderImage, setSliderImage] = useState(0)
 
   const [prevOpacity, setPrevOpacity] = useState(0.5)
@@ -51,7 +62,6 @@ const Exclusive = () => {
 
 }
 
-  const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
   return (
     <div className="exclusive-access">
       <h1 className="exclusive-access-header">
