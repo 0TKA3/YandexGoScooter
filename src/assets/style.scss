@@ -152,6 +152,8 @@ header {
 .buy-aboniment{
     margin-top: 48px;
     max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     p {
         color: #21201F;
         font-family: YS Text;
@@ -246,7 +248,7 @@ header {
         width: 362px;
         color: #21201F;
         font-family: YS Text;
-        font-size: 24px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 28.8px */
@@ -354,7 +356,6 @@ header {
 
 .buy-aboniment {
     width: 1000px;
-    margin: 0 auto;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -408,22 +409,23 @@ header {
     margin-top: 128px;
     margin-bottom: 88px;
     width: 100%;
-    height: 470px;
+    height: 520px;
     display: flex;
 
     .down-left-side {
         width: 50%;
-        height: 600px;
+        height: 423px;
         .solo-scooter {
             height: 392.516px !important;
         }
     }
     .down-right-side {
-        width: 419px;
+        width: 50%;
         margin-bottom: 111px;
+        height: 100%;
         h1 {
+            width: 80%;
             color: #21201F;
-
         font-size: 48px;
         font-style: normal;
         font-weight: 900;
@@ -432,6 +434,7 @@ header {
         margin-bottom: 48px;
         }
         p {
+            width: 85%;
             color: #21201F;
             font-size: 24px;
             font-style: normal;
@@ -461,6 +464,7 @@ header {
                 background: darken(#FFDE40, 12%);
             }
         }
+        margin-bottom: 111px;
     }
     .buy-join-soc {
         width: 423px;
@@ -566,12 +570,13 @@ header {
         justify-content: flex-start;
         margin: 0 !important;
         margin-bottom: 24px !important;
+        height: auto;
         .with-friend {
             margin-left: -10px;
         }
         p {
             font-size: 16px;
-            width: 200px;
+            width: 100%;
             margin-left: 16px;
             color: #21201F;
             font-family: YS Text;
@@ -597,6 +602,7 @@ header {
             margin-top: 32px !important;
             font-size: 16px !important;
             height: auto;
+            line-height: 120%; /* 28.8px */
         }
     }
     .exclusive-access-header {
@@ -739,7 +745,7 @@ header {
         align-items: flex-start;
         margin: 0;
         margin-bottom: 72px;
-        margin-top: 72px;
+        margin-top: 111px;
         max-width: 375px;
         p {
             font-size: 10px;
