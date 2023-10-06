@@ -29,9 +29,14 @@ const Exclusive = () => {
   const [prevOpacity, setPrevOpacity] = useState(0.5)
   const [nextOpacity, setNextOpacity] = useState(1)
 
-  function sliderNext() {
+  function sliderNext(event) {
     if(sliderImage<3) {
       setSliderImage(sliderImage + 1)
+      const slider = document.getElementById('slider-img')
+      slider.setAttribute('class', '')
+      slider.setAttribute('class', 'animRight')
+      setTimeout(()=> {slider.setAttribute('class', '')},300)
+      
     }
 
     if(sliderImage>=0) {
@@ -49,6 +54,10 @@ const Exclusive = () => {
   function sliderPrev() {
     if(sliderImage>0) {
       setSliderImage(sliderImage - 1)
+      const slider = document.getElementById('slider-img')
+      slider.setAttribute('class', '')
+      slider.setAttribute('class', 'animLeft')
+      setTimeout(()=> {slider.setAttribute('class', '')},300)
     } 
 
     if(sliderImage>1) {
@@ -98,7 +107,7 @@ const Exclusive = () => {
           <div className="slider">
             <div className="slider-decoration"><img src={firstDecore} alt="decoration" /></div>
             <div className="slider-main-image">
-              <img src={sliderImgList[sliderImage]} alt="" width={344}/>
+              <img src={sliderImgList[sliderImage]} alt="" width={344} id='slider-img'/>
             </div>
             <div className="slider-buttons">
               <button style={{marginRight:"12px"}}><img style={{opacity:`${prevOpacity}`}} onClick={sliderPrev} src={prevSlideIcon} alt='прошлый слайд'></img></button>

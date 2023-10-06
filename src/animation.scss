@@ -1,0 +1,30 @@
+.animRight {
+  position: relative;
+  animation: showRight 0.3s ease-out;
+  z-index: 0;
+}
+.animLeft {
+  position: relative;
+  animation: showLeft 0.3s ease-out;
+  z-index: 0;
+}
+
+@keyframes showLeft {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes showRight {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
