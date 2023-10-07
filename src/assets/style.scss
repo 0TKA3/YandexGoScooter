@@ -21,6 +21,7 @@
 	padding: 0px;
 	margin: 0px;
 	border: none;
+    // outline: 2px solid red;
 }
 
 *,
@@ -150,8 +151,9 @@ header {
 }
 
 .buy-aboniment{
-    margin-top: 48px !important;
+    margin-top: 48px;
     max-width: 100vw;
+    margin-left: auto;
     margin-right: auto;
     p {
         color: #21201F;
@@ -195,8 +197,6 @@ header {
     
     margin-top: 44px;
     button {
-        max-width: 318px;
-        max-height: 65px;
         cursor: pointer;
         font-family: YS Text;
         color: #21201F;
@@ -577,6 +577,7 @@ header {
         }
         p {
             font-size: 16px;
+            margin-right: 32px;
             width: 100%;
             margin-left: 16px;
             color: #21201F;
@@ -631,7 +632,7 @@ header {
         .slider-decoration {
             position: absolute;
             left: 250px;
-            top: 1790px;
+            top: 1620px;
             z-index: 5;
             img {
                 width: 120px;
@@ -761,8 +762,32 @@ header {
     }
     .composition {
         width: 80vw !important;
+        margin-top: -35px;
     }
     .scooter-composition {
         margin-left: -7px;
+    }
+    .content-container {
+        padding-top: 0;
+    }
+    .header-inner {
+        padding-bottom: 0;
+    }
+    .content-container {
+        margin-top: -45px;
+    }
+    .exclusive-access {
+        margin-top: 0;
+    }
+    .top-left-side{
+        margin-bottom: 25px;
+    }
+    .elipse {
+        margin-top: -50px;
+        margin-left: 15px;
+    }
+    .composition {
+        max-width: 375px;
+
     }
 }
