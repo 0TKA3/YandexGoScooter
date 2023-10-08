@@ -1,11 +1,11 @@
 .animRight {
   position: relative;
-  animation: showRight 0.3s ease-out;
+  animation: showRight 0.3s ease-in;
   z-index: 0;
 }
 .animLeft {
   position: relative;
-  animation: showLeft 0.3s ease-out;
+  animation: showLeft 0.3s ease-in;
   z-index: 0;
 }
 
