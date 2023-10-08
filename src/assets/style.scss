@@ -21,7 +21,7 @@
 	padding: 0px;
 	margin: 0px;
 	border: none;
-    // outline: 2px solid red;
+    // outline: 1px solid red;
 }
 
 *,
@@ -676,7 +676,6 @@ header {
         width: 100vw;
         height: 710px;
         .elipse {
-            margin-bottom: 50px;
             max-width: 100vw !important;
             width: 250px;
         }
@@ -782,12 +781,15 @@ header {
     .top-left-side{
         margin-bottom: 25px;
     }
-    .elipse {
-        margin-top: -50px;
-        margin-left: 15px;
-    }
     .composition {
         max-width: 375px;
 
+    }
+    .elipse {
+        transform: rotate(-0deg);
+        max-height: 280px;
+        margin-left: 15px;
+        margin-bottom: 35px;
+        width: 90vw;
     }
 }
