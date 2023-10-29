@@ -86,27 +86,27 @@ const Exclusive = () => {
       {width>768 ? (
         <div className="exclusive-access-photo">
         <div className="main-photo-wrapper">
-          <img src={excFirst} alt="" />
-          <img className="first-img-decore" src={firstDecore} alt="" />
+          <img src={excFirst} alt=""  loading='eager'/>
+          <img className="first-img-decore" src={firstDecore} alt=""  loading='eager'/>
         </div>
         <div className="main-photo-wrapper second-photo">
-          <img src={excSecond} alt="" />
-          <img className="second-img-decore" src={secondDecore} alt="" />
+          <img src={excSecond} alt=""  loading='eager'/>
+          <img className="second-img-decore" src={secondDecore} alt=""  loading='eager'/>
         </div>
         <div className="main-photo-wrapper third-photo">
-          <img src={excThird} alt="" />
-          <img className="third-img-decore" src={thirdDecore} alt="" />
+          <img src={excThird} alt="" loading='eager' />
+          <img className="third-img-decore" src={thirdDecore} alt="" loading='eager' />
         </div>
         <div className="main-photo-wrapper fourth-photo">
-          <img src={excFourth} alt="" />
+          <img src={excFourth} alt=""  loading='eager'/>
         </div>
       </div>
       ) : (
         <>
           <div className="slider">
-            <div className="slider-decoration"><img src={firstDecore} alt="decoration" /></div>
+            <div className="slider-decoration"><img src={firstDecore} alt="decoration"  loading='eager'/></div>
             <div className="slider-main-image">
-              <img src={sliderImgList[sliderImage]} alt="" width={344} id='slider-img'/>
+              <img src={sliderImgList[sliderImage]} alt="" width={344} id='slider-img' loading='eager'/>
             </div>
             <div className="slider-buttons">
               <button style={{marginRight:"12px"}}><img style={{opacity:`${prevOpacity}`}} onClick={sliderPrev} src={prevSlideIcon} alt='прошлый слайд'></img></button>

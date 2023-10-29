@@ -14,15 +14,15 @@ const Buy = () => {
                 </div>
                 {width>768 ? (                <div className="top-right-side">
                     <div className="elipse"></div>
-                    <img src={scooter} alt="скутер" />
+                    <img src={scooter} alt="скутер"  loading='eager'/>
                 </div>) : (<></>)}
 
             </div>
             <div className="down-side">
                 <div className="down-left-side">
                     <div className="elipse"></div>
-                    <img src={soloScooter} alt="scooter" className='solo-scooter' />
-                    <img className="join-soc buy-join-soc"src={joinSoc} alt="Вступить в сообщество" />
+                    <img src={soloScooter} alt="scooter" className='solo-scooter' loading='eager'/>
+                    <img className="join-soc buy-join-soc"src={joinSoc} alt="Вступить в сообщество"  loading='eager'/>
                 </div>
                 <div className="down-right-side">
                     <h1>80  % наших пользователей уже в клубе и экономят на поездках</h1>
