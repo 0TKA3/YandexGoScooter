@@ -15,12 +15,12 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header></Header>
-      <Content></Content>
-      <Buy></Buy>
-      <Footer></Footer>
+      <Header />
+      <Content />
+      <Buy />
+      <Footer />
     </div>
   );
 }
- 
+
 export default App;
